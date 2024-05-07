@@ -16,15 +16,17 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .main > .panel{
     border-radius: 10px;
     height: 80%;
     width: 80%;
-   
+
     overflow: hidden;
 
+   
     .ptop{
         height: 100px;
         width: 100%;
@@ -59,6 +61,7 @@ html,body{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         gap: 10px;
         flex-wrap: wrap;
 

@@ -19,7 +19,7 @@ function timerValue() {
       timer--;
       document.querySelector("#timerval").textContent = timer;
     } else {
-      document.querySelector(".pbtm").innerHTML = `<h1>Game Over</h1> <br> <h1>score : ${score}</h1>`;
+      document.querySelector(".pbtm").innerHTML = `<h1>Game Over <br> score : ${score}</h1>`;
       clearInterval(timeint);
     }
   }, 1000);
@@ -41,7 +41,7 @@ timerValue();
 hitvalue();
 
 document.querySelector(".pbtm").addEventListener("click", (dets) => {
-  var targetval = Number(dets.target.textContent);
+  var targetval = +(dets.target.textContent);
 
   if (targetval === hit) {
     increaseScore();
